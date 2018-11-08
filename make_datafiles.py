@@ -71,7 +71,7 @@ def tokenize_stories(stories_dir, tokenized_stories_dir):
 
 
 def read_story_file(text_file):
-    with open(text_file, "r") as f:
+    with open(text_file, "r", encoding="utf-8") as f:
         # sentences are separated by 2 newlines
         # single newlines might be image captions
         # so will be incomplete sentence
